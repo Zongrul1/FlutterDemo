@@ -5,6 +5,13 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
+/**
+*  折线图demo
+ *  LineChartSample1() -> charts_flutter
+ *  LineChartSample2() -> fl_chart
+ *  LineChartSample3() -> fl_chart
+**/
+
 class MyLineChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

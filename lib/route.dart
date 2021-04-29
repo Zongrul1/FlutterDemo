@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
+/**
+* 利用dio进行网络请求的demo
+**/
 
 class NewRoute extends StatelessWidget{
   @override

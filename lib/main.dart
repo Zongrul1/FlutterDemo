@@ -7,6 +7,7 @@ import 'package:flutter_app2/linechart.dart' as LineChart;
 import 'package:flutter_app2/piechart.dart' as PieChart;
 import 'package:flutter_app2/sankey.dart' as Sankey;
 import 'package:flutter_app2/input.dart' as Input;
+import 'package:flutter_app2/channel.dart' as Channel;
 
 void main() {
   runApp(new SampleApp());
@@ -17,6 +18,7 @@ final indexList = [
   'httpRequest',
   'chart',
   'input',
+  'channel',
 ];
 
 class IndexList extends StatelessWidget{
@@ -62,6 +64,7 @@ class SampleApp extends StatelessWidget {
         "piechart": (context) => PieChart.MyPieChart(),
         "sankey": (context) => Sankey.MySankeyChart(),
         "input": (context) => Input.textInputDemo(),
+        "channel": (context) => Channel.ChannelDemo(),
       },
       title: 'Flutter Demo',
       theme: new ThemeData(

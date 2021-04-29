@@ -7,6 +7,15 @@ import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter_echarts/flutter_echarts.dart';
 
+/**
+*  柱状图demo
+ *  BarEchartDemo() -> echarts
+ *  BarChartSample1() -> charts_flutter
+ *  BarChartSample2() -> fl_chart
+ *  BarChartSample3() -> fl_chart
+ *  BarChartSample4() -> fl_chart
+**/
+
 class MyBarChart extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -15,7 +24,7 @@ class MyBarChart extends StatelessWidget{
         body:
             ListView(
               children: [
-                new EchartDemo(),
+                new BarEchartDemo(),
                 new BarChartSample1(),
                 new BarChartSample2(),
                 new BarChartSample3(),
@@ -873,12 +882,12 @@ class BarChartSample4State extends State<BarChartSample4> {
 
 //ECharts
 
-class EchartDemo extends StatefulWidget {
+class BarEchartDemo extends StatefulWidget {
   @override
-  _EchartDemoState createState() => _EchartDemoState();
+  _BarEchartDemoState createState() => _BarEchartDemoState();
 }
 
-class _EchartDemoState extends State<EchartDemo> {
+class _BarEchartDemoState extends State<BarEchartDemo> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   List<Map<String, Object>> _data1 = [{ 'name': 'Please wait', 'value': 0 }];

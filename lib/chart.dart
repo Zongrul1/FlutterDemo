@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+/**
+*  此类作为图表类菜单
+**/
+
+
+//菜单数组
 final chartList = [
   'barchart',
   'linechart',

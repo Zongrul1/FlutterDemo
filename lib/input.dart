@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/**
+*  输入控件demo
+ *  使用了TextField和showDialog
+**/
+
 class textInputDemo extends StatelessWidget{
   @override
   Widget build(BuildContext context) {

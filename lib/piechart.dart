@@ -5,6 +5,12 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
+/**
+*  饼图demo
+ *  PieChartSample1() -> flutter_chart
+ *  PieChartSample2() -> fl_chart
+ *  PieChartSample3() -> fl_chart
+**/
 
 class MyPieChart extends StatelessWidget {
   @override

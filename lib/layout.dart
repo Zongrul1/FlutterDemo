@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app2/route.dart';
 
+/**
+*  布局demo
+**/
+
 //非状态组件
 class TitleSection extends StatelessWidget{
   @override

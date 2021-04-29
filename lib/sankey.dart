@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_echarts/flutter_echarts.dart';
 // import 'package:number_display/number_display.dart';
 
+/**
+*  sankey chart demo 依赖于 echarts 利用js 通过webview实现
+**/
 
 class MySankeyChart extends StatelessWidget{
   @override
