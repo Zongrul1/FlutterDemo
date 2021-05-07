@@ -31,6 +31,17 @@ Flutter学习demo
 #### 5.4 sankey
 桑基图demo，利用echarts实现
 
+### 6.scale
+缩放拖拽类demo的菜单
+
+#### 6.1 scaleChart
+利用InteractiveViewer实现对图表的缩放和拖拽
+
+#### 6.2 scaleImage
+利用transfrom实现图片的缩放和拖拽
+
+#### 6.3 scaleImage2
+利用InteractiveViewer实现图片的缩放和拖拽
 
 
 

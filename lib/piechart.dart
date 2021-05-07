@@ -439,4 +439,15 @@ class PieChart3State extends State {
   }
 }
 
+class PieChartSample4 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      child:  new charts.PieChart(
+                _getSeriesData(),
+            ),
+      );
+    }
+}
+
 

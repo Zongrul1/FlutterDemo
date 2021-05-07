@@ -8,6 +8,10 @@ import 'package:flutter_app2/piechart.dart' as PieChart;
 import 'package:flutter_app2/sankey.dart' as Sankey;
 import 'package:flutter_app2/input.dart' as Input;
 import 'package:flutter_app2/channel.dart' as Channel;
+import 'package:flutter_app2/scale.dart' as Scale;
+import 'package:flutter_app2/scaleImage.dart' as ScaleImage;
+import 'package:flutter_app2/scaleChart.dart' as ScaleChart;
+import 'package:flutter_app2/scaleImage2.dart' as ScaleImage2;
 
 void main() {
   runApp(new SampleApp());
@@ -19,6 +23,7 @@ final indexList = [
   'chart',
   'input',
   'channel',
+  'scale'
 ];
 
 class IndexList extends StatelessWidget{
@@ -65,6 +70,10 @@ class SampleApp extends StatelessWidget {
         "sankey": (context) => Sankey.MySankeyChart(),
         "input": (context) => Input.textInputDemo(),
         "channel": (context) => Channel.ChannelDemo(),
+        "scale": (context) => Scale.scaleDemoWidget(),
+        "scaleImage": (context) => ScaleImage.scaleImageDemoWidget(),
+        "scaleChart": (context) => ScaleChart.scaleChartDemoWidget(),
+        "scaleImage2": (context) => ScaleImage2.scaleImageDemoWidget(),
       },
       title: 'Flutter Demo',
       theme: new ThemeData(
