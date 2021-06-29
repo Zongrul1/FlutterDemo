@@ -57,7 +57,7 @@ class _scaleImageDemoState extends State<scaleImageDemoWidget>{
                       _scale= curScale * e.scale;
                       _left += (e.focalPoint.dx - _lastOffset.dx);
                       _top += (e.focalPoint.dy - _lastOffset.dy);
-                      _lastOffset = e.focalPoint;
+                       _lastOffset = e.focalPoint;
                     });
                   },
                   onScaleEnd: (ScaleEndDetails e) {

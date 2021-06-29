@@ -33,7 +33,7 @@ class MainActivity() : FlutterActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //GeneratedPluginRegistrant.registerWith(this)
-
+        //saConfigOptions.enableLog(true);
         MethodChannel(flutterEngine?.getDartExecutor(), CHANNEL)?.setMethodCallHandler { call, result ->
             if (call.method == "getBatteryLevel") {
                 val batteryLevel = getBatteryLevel()

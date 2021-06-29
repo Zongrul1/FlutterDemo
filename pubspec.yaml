@@ -29,7 +29,7 @@ dependencies:
   flutter:
     sdk: flutter
   # 如果您的项目支持 null safety ,请指定到 v2.0.0 及以上
-  sensors_analytics_flutter_plugin: ^2.0.0
+  sensors_analytics_flutter_plugin: ^1.0.6
   flutter_echarts: ^2.1.0
 
 
