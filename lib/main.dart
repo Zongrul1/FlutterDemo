@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     onScaleUpdate: (ScaleUpdateDetails e) {
                       setState(() {
-                        //缩放比例以及移动
+                        //浮窗的位置改动
                         Application.overlayEntry?.remove();
                         _left += (e.focalPoint.dx - lastOffset.dx);
                         _top += (e.focalPoint.dy - lastOffset.dy);
@@ -90,10 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     },
                     onScaleEnd: (ScaleEndDetails e) {
-                      //浮窗的位置改动
-                      Application.overlayEntry?.remove();
-                      Application.overlayEntry = overlayEntry;
-                      Application.globalKey.currentState.overlay.insert(overlayEntry);
+
                     },
                 ),
             ),
