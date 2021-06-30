@@ -62,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void addOverlayEntry() {
+    final size = MediaQuery.of(context).size;//屏幕大小
     Application.overlayEntry?.remove();
     overlayEntry = OverlayEntry(
         builder: (BuildContext context) => Stack(
@@ -73,18 +74,26 @@ class _MyHomePageState extends State<MyHomePage> {
                     onTap: () async{
 
                     },
-                    child: Icon(Icons.add_call, color: Colors.red,),
+                    child: Image.asset(
+                      'images/tt.png',
+                      width: 150,
+                      height: 150,
+                    ),
                     onScaleStart: (ScaleStartDetails e){
                       lastOffset = e.focalPoint;
                     },
                     onScaleUpdate: (ScaleUpdateDetails e) {
+                      Application.overlayEntry?.remove();
                       setState(() {
                         //浮窗的位置改动
-                        Application.overlayEntry?.remove();
                         _left += (e.focalPoint.dx - lastOffset.dx);
                         _top += (e.focalPoint.dy - lastOffset.dy);
                         lastOffset = e.focalPoint;
                         });
+                      if(_left < -50) _left = -50;
+                      if(_top < -50) _top = -50;
+                      if(_left > size.width - 102) _left = size.width - 102;
+                      if(_top > size.height - 102) _top = size.height - 102;
                       Application.overlayEntry = overlayEntry;
                       Application.globalKey.currentState.overlay.insert(overlayEntry);
 
